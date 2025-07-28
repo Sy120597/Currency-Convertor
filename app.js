@@ -1,6 +1,7 @@
 const BASE_API = "e9e4315982-554475f431-t03v8f";
 const BASE_URL = "https://api.fastforex.io/fetch-one";
-
+const toggleSwitch = document.getElementById("theme-toggle");
+const modeLabel = document.querySelector(".mode-label");
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
 const fromCurr = document.querySelector(".from select");
@@ -235,4 +236,14 @@ btn.addEventListener("click", (evt) => {
 
 window.addEventListener("load", () => {
   updateExchangeRate();
+});
+
+toggleSwitch.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    modeLabel.innerText = "Dark Mode";
+  } else {
+    modeLabel.innerText = "Light Mode";
+  }
 });
