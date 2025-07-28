@@ -31,14 +31,6 @@ A simple and responsive currency converter web app that allows users to convert 
 - **Font Awesome (Icons)**
 - **FlagsAPI (Country flags)**
 
----
-
-## 📷 Screenshot
-
-<img src="https://user-images.githubusercontent.com/placeholder/your-screenshot.png" width="700" />
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -48,8 +40,6 @@ Currency-Convertor/
 ├── app.js
 └── README.md
 ```
-
----
 
 ## 🚀 Getting Started Locally
 
